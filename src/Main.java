@@ -22,7 +22,53 @@ public class Main {
          el sistema debe discriminar la informacion general del estudiante es decir
          nombre, documento,nota materia**/
 
-        Scanner
+        Scanner leer = new Scanner(System.in);
+        /**definir variables**/
+        System.out.println("ingrese el nombre del estudiante ");
+        String nombre_estudiante = leer.nextLine();
+        System.out.println("ingrese el documento del estudiante");
+        String documento_estudiante = leer.nextLine();
+        /**definir condicional**/
+        /**condicional multiple ejemplo
+                switch () {
+                    case1 "":
+                        break;
+                     case2 "":
+                        break;
+                       case3 "":
+                        break;
+                }**/
+        System.out.println("seleccione el programa: \n1-desarrollo de software\n2-diseño grafico\n3-gastronomia");
+        String programa = leer.nextLine();
+        switch (programa){
+            case "1":
+                System.out.println("programa de desarrollo de software");
+                System.out.println("seleccione la materia \n1-logica de programacion\n2-metodologias agiles\/3-introduccion a la programacion");
+                String materia = leer.nextLine();
+                switch (materia){
+                    case "1":
+                        System.out.println("nota de logica de programacion");
+                        break;
+
+                    case "2":
+                        System.out.println("nota de metodologias agiles");
+                        break;
+                    case "3":
+                        System.out.println("nota de introduccion a la programacion");
+                        break;
+                }
+                break;
+            case "2":
+                System.out.println("programa de diseño grafico");
+                break;
+            case "3":
+                System.out.println("programa de gastronomia");
+                break;
+
+        }
+
+
+
 
 
 
