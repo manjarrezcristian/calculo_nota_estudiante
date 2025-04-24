@@ -24,7 +24,12 @@ public class Main {
 
         Scanner leer = new Scanner(System.in);
         /**definir variables**/
-        System.out.println("ingrese el nombre del estudiante ");
+        double notaexamenparcial = 0;
+        double notataller =0;
+        double notafinal =0;
+        double notamateria =0;
+        String materia = " ";
+                System.out.println("ingrese el nombre del estudiante ");
         String nombre_estudiante = leer.nextLine();
         System.out.println("ingrese el documento del estudiante");
         String documento_estudiante = leer.nextLine();
@@ -43,27 +48,205 @@ public class Main {
         switch (programa){
             case "1":
                 System.out.println("programa de desarrollo de software");
-                System.out.println("seleccione la materia \n1-logica de programacion\n2-metodologias agiles\/3-introduccion a la programacion");
-                String materia = leer.nextLine();
+                System.out.println("seleccione la materia \n1-logica de programacion\n2-metodologias agiles\n3-introduccion a la programacion");
+                materia = leer.nextLine();
                 switch (materia){
                     case "1":
                         System.out.println("nota de logica de programacion");
+                        System.out.println("nota examen parcial");
+                        notaexamenparcial = leer.nextDouble();
+                        System.out.println("nota taller");
+                        notataller = leer.nextDouble();
+                        System.out.println("nota final");
+                        notafinal = leer.nextDouble();
+                        notamateria = (notaexamenparcial * 0.2) + (notataller*0.3) + (notafinal*0.5);
+                        System.out.println("el estudiante"+ nombre_estudiante + "tiene la siguiente nota final de la materia " + notamateria);
+                        if (notamateria < 2){
+                            System.out.println("perdio definitivamente");
+                        } else if (notamateria < 2.9){
+                            System.out.println("tiene derecho al plan de mejoramiento");
+                        }
+                         else {
+                            System.out.println("asi le quedo la materia");
+                        }
                         break;
 
                     case "2":
                         System.out.println("nota de metodologias agiles");
+                        System.out.println("nota examen parcial");
+                        notaexamenparcial = leer.nextDouble();
+                        System.out.println("nota taller");
+                        notataller = leer.nextDouble();
+                        System.out.println("nota final");
+                        notafinal = leer.nextDouble();
+                        notamateria = (notaexamenparcial * 0.2) + (notataller*0.3) + (notafinal*0.5);
+                        System.out.println("el estudiante"+ nombre_estudiante + "tiene la siguiente nota final de la materia " + notamateria);
+                        if (notamateria < 2){
+                            System.out.println("perdio definitivamente");
+                        } else if (notamateria < 2.9){
+                            System.out.println("tiene derecho al plan de mejoramiento");
+                        }
+                        else {
+                            System.out.println("asi le quedo la materia");
+                        }
                         break;
                     case "3":
                         System.out.println("nota de introduccion a la programacion");
+                        System.out.println("nota examen parcial");
+                        notaexamenparcial = leer.nextDouble();
+                        System.out.println("nota taller");
+                        notataller = leer.nextDouble();
+                        System.out.println("nota final");
+                        notafinal = leer.nextDouble();
+                        notamateria = (notaexamenparcial * 0.2) + (notataller*0.3) + (notafinal*0.5);
+                        System.out.println("el estudiante"+ nombre_estudiante + "tiene la siguiente nota final de la materia " + notamateria);
+                        if (notamateria < 2){
+                            System.out.println("perdio definitivamente");
+                        } else if (notamateria < 2.9){
+                            System.out.println("tiene derecho al plan de mejoramiento");
+                        }
+                        else {
+                            System.out.println("asi le quedo la materia");
+                        }
                         break;
                 }
                 break;
             case "2":
-                System.out.println("programa de diseño grafico");
+                System.out.println("programa de diseño");
+                System.out.println("seleccione la materia \n1-tipografia\n2-iconografia\n3-semantica");
+                materia = leer.nextLine();
+                switch (materia){
+                    case "1":
+                        System.out.println("nota de tipografia");
+                        System.out.println("nota examen parcial");
+                        notaexamenparcial = leer.nextDouble();
+                        System.out.println("nota taller");
+                        notataller = leer.nextDouble();
+                        System.out.println("nota final");
+                        notafinal = leer.nextDouble();
+                        notamateria = (notaexamenparcial * 0.2) + (notataller*0.3) + (notafinal*0.5);
+                        System.out.println("el estudiante"+ nombre_estudiante + "tiene la siguiente nota final de la materia " + notamateria);
+                        if (notamateria < 2){
+                            System.out.println("perdio definitivamente");
+                        } else if (notamateria < 2.9){
+                            System.out.println("tiene derecho al plan de mejoramiento");
+                        }
+                        else {
+                            System.out.println("asi le quedo la materia");
+                        }
+
+                        break;
+
+                    case "2":
+                        System.out.println("nota de iconografia");
+                        System.out.println("nota examen parcial");
+                        notaexamenparcial = leer.nextDouble();
+                        System.out.println("nota taller");
+                        notataller = leer.nextDouble();
+                        System.out.println("nota final");
+                        notafinal = leer.nextDouble();
+                        notamateria = (notaexamenparcial * 0.2) + (notataller*0.3) + (notafinal*0.5);
+                        System.out.println("el estudiante"+ nombre_estudiante + "tiene la siguiente nota final de la materia " + notamateria);
+                        if (notamateria < 2){
+                            System.out.println("perdio definitivamente");
+                        } else if (notamateria < 2.9){
+                            System.out.println("tiene derecho al plan de mejoramiento");
+                        }
+                        else {
+                            System.out.println("asi le quedo la materia");
+                        }
+                        break;
+                    case "3":
+                        System.out.println("nota de semantica");
+                        System.out.println("nota examen parcial");
+                        notaexamenparcial = leer.nextDouble();
+                        System.out.println("nota taller");
+                        notataller = leer.nextDouble();
+                        System.out.println("nota final");
+                        notafinal = leer.nextDouble();
+                        notamateria = (notaexamenparcial * 0.2) + (notataller*0.3) + (notafinal*0.5);
+                        System.out.println("el estudiante"+ nombre_estudiante + "tiene la siguiente nota final de la materia " + notamateria);
+                        if (notamateria < 2){
+                            System.out.println("perdio definitivamente");
+                        } else if (notamateria < 2.9){
+                            System.out.println("tiene derecho al plan de mejoramiento");
+                        }
+                        else {
+                            System.out.println("asi le quedo la materia");
+                        }
+                        break;
+                }
+
                 break;
             case "3":
                 System.out.println("programa de gastronomia");
+                System.out.println("seleccione la materia \n1-costos\n2-panaderia dulce\n3-cocina internacional");
+                materia = leer.nextLine();
+                switch (materia){
+                    case "1":
+                        System.out.println("nota de costos");
+                        System.out.println("nota examen parcial");
+                        notaexamenparcial = leer.nextDouble();
+                        System.out.println("nota taller");
+                        notataller = leer.nextDouble();
+                        System.out.println("nota final");
+                        notafinal = leer.nextDouble();
+                        notamateria = (notaexamenparcial * 0.2) + (notataller*0.3) + (notafinal*0.5);
+                        System.out.println("el estudiante"+ nombre_estudiante + "tiene la siguiente nota final de la materia " + notamateria);
+                        if (notamateria < 2){
+                            System.out.println("perdio definitivamente");
+                        } else if (notamateria < 2.9){
+                            System.out.println("tiene derecho al plan de mejoramiento");
+                        }
+                        else {
+                            System.out.println("asi le quedo la materia");
+                        }
+
+                        break;
+
+                    case "2":
+                        System.out.println("nota de panaderia dulce");
+                        System.out.println("nota examen parcial");
+                        notaexamenparcial = leer.nextDouble();
+                        System.out.println("nota taller");
+                        notataller = leer.nextDouble();
+                        System.out.println("nota final");
+                        notafinal = leer.nextDouble();
+                        notamateria = (notaexamenparcial * 0.2) + (notataller*0.3) + (notafinal*0.5);
+                        System.out.println("el estudiante"+ nombre_estudiante + "tiene la siguiente nota final de la materia " + notamateria);
+                        if (notamateria < 2){
+                            System.out.println("perdio definitivamente");
+                        } else if (notamateria < 2.9){
+                            System.out.println("tiene derecho al plan de mejoramiento");
+                        }
+                        else {
+                            System.out.println("asi le quedo la materia");
+                        }
+                        break;
+                    case "3":
+                        System.out.println("nota de cocina internacional");
+                        System.out.println("nota examen parcial");
+                        notaexamenparcial = leer.nextDouble();
+                        System.out.println("nota taller");
+                        notataller = leer.nextDouble();
+                        System.out.println("nota final");
+                        notafinal = leer.nextDouble();
+                        notamateria = (notaexamenparcial * 0.2) + (notataller*0.3) + (notafinal*0.5);
+                        System.out.println("el estudiante"+ nombre_estudiante + "tiene la siguiente nota final de la materia " + notamateria);
+                        if (notamateria < 2){
+                            System.out.println("perdio definitivamente");
+                        } else if (notamateria < 2.9){
+                            System.out.println("tiene derecho al plan de mejoramiento");
+                        }
+                        else {
+                            System.out.println("asi le quedo la materia");
+                        }
+                        break;
+                }
+
                 break;
+
+
 
         }
 
